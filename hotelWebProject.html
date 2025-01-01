@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Hotel Webpage</title>
+        <style>
+            .section_01{
+                display: flex;
+                background-color: #000000;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                justify-content: space-around;
+            }
+            .section_01 a {
+                text-decoration: none;
+                color: white;
+                padding: 14px 20px;
+                display: block;
+                text-align: center;
+            }
+            .section_01 a:hover{
+                background-color: rgb(134, 55, 109);
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <ul class="section_01">
+            <li><a href=""><img src="C:\Users\Chama Computers\OneDrive\Pictures" alt=""></a></li>
+            <li><a href="">Destinations</a></li>
+            <li><a href="">Hotels</a></li>
+            <li><a href="">Dining</a></li>
+            <li><a href="">Offers</a></li>
+            <div class="section_02">
+                <button onclick="dropdown()">Membership</button>
+                <div>
+                    <a href="">A</a>
+                    <a href="">B</a>
+                    <a href="">C</a>
+                </div>
+            </div>
+            <li>
+                
+            </li>
+            <li></li>
+            <li><a href="">Login/Join</a></li>
+            <li><a href="">Book a Stay</a></li>
+
+            <script type="text/javascript">
+                function dropdown(){
+                    document.querySelector(".section_02").classList.toggle("active");
+                }
+
+            </script>
+
+        </ul>
+    </body>
+</html>
