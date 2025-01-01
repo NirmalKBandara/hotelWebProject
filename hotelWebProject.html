@@ -2,11 +2,26 @@
     <head>
         <title>Hotel Webpage</title>
         <style>
+            body{
+                height: 95vh;
+                background-color: lightblue;
+                background-image: url(image_01.jpg) ;
+                background-repeat: no-repeat;
+                background-position: top;
+                background-attachment: scroll;
+                background-size: cover;
+                
+            }
+            #data_01{
+                float: left;
+                position: relative;
+            }
             .section_01{
                 display: flex;
-                background-color: #000000;
+                background-color: #00000000;
                 padding: 0;
                 margin: 0;
+                
                 list-style: none;
                 justify-content: space-around;
             }
@@ -20,36 +35,73 @@
             .section_01 a:hover{
                 background-color: rgb(134, 55, 109);
             }
+            .section_02 button{
+                background-color: rgba(0, 0, 0, 0);
+                color:white;
+                padding: 14px 20px;
+                border: none;
+                cursor: pointer;
+            }
+            .section_02 a{
+                display: block;
+                color: #000000;
+            }
+            .section_02 .section_03{
+                display: none;
+                background-color: aquamarine;
+                position: absolute;
+                min-width: 100px;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3) ;
 
+            }
+            .section_02:hover .section_03{
+                display: block;
+            }
+            #data_02{
+                font-size: 70px;
+                color: white;
+                position:absolute;
+                top: 900px;
+                left: 400px;
+            }
+            #data_03{
+                color: white;
+                position:absolute;
+                top: 900px;
+                left: 1500px;
+            }
 
         </style>
     </head>
     <body>
+        <p id="data_01"><a href=""><img src="C:\Users\Chama Computers\OneDrive\Pictures" width="75px"></a></p>
         <ul class="section_01">
-            <li><a href=""><img src="C:\Users\Chama Computers\OneDrive\Pictures" alt=""></a></li>
             <li><a href="">Destinations</a></li>
             <li><a href="">Hotels</a></li>
             <li><a href="">Dining</a></li>
             <li><a href="">Offers</a></li>
-            <div class="section_02">
-                <button onclick="dropdown()">Membership</button>
-                <div>
+            <li class="section_02">
+                <button>Membership ▾</button>
+                <div class="section_03">
                     <a href="">A</a>
                     <a href="">B</a>
                     <a href="">C</a>
                 </div>
-            </div>
-            <li>
-                
-            </li>
+            <li class="section_02">
+                <button>More ▾</button>
+                <div class="section_03">
+                    <a href="">A</a>
+                    <a href="">B</a>
+                    <a href="">C</a>
+                </div>
             <li></li>
             <li><a href="">Login/Join</a></li>
             <li><a href="">Book a Stay</a></li>
 
+            <div id="data_02">TAJ SAMUDRA, COLOMBO</div>
+            <div id="data_03"><a href=""><img src="image_02.jpg" width="200px" height="70px"></a></div>
+
             <script type="text/javascript">
-                function dropdown(){
-                    document.querySelector(".section_02").classList.toggle("active");
-                }
 
             </script>
 
