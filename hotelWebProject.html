@@ -2,10 +2,13 @@
     <head>
         <title>Hotel Webpage</title>
         <style>
+            *{
+                font-family: 'Courier New', Courier, monospace;
+            }
             body{
                 height: 95vh;
                 background-color: lightblue;
-                background-image: url(image_01.jpg) ;
+                background-image: url() ;
                 background-repeat: no-repeat;
                 background-position: top;
                 background-attachment: scroll;
@@ -15,6 +18,7 @@
             #data_01{
                 float: left;
                 position: relative;
+                margin:5px;
             }
             .section_01{
                 display: flex;
@@ -32,7 +36,7 @@
                 text-align: center;
             }
             .section_01 a:hover{
-                background-color: rgb(134, 55, 109);
+                background-color: rgb(138, 129, 79);
             }
             .section_02 button{
                 background-color: rgba(0, 0, 0, 0);
@@ -71,9 +75,12 @@
             }
             .section_04{
                 position: absolute;
+                color: white;
                 font-size: 40px;
                 display: flex;
-                background-color: #00000000;
+                background-color: #000000;
+                height: 50px;
+                width: 1500px;
                 padding: 10px;
                 margin: 0;
                 list-style: none;
@@ -82,6 +89,14 @@
             }
             .section_04 button{
                 font-size: 40px;
+                border: none;
+                background-color: #00000000;
+                color: white;
+                cursor: pointer;
+            }
+            #data_05{
+                position: relative;
+                bottom: 11px;
             }
 
         </style>
@@ -129,7 +144,7 @@
             </ul>
 
             <script type="text/javascript">
-
+                
             </script>
 
         </ul>
