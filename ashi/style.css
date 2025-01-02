@@ -1,0 +1,90 @@
+.header{
+    width:100%;
+    min-height: 100%;
+    background-image:url('header1.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.logo{
+    position: absolute;
+    float: left;
+    top: 50px;
+    left: 50px;
+}
+.logoLink{
+    position: absolute;
+    display: block;
+    float: left;
+    top: 100px;
+    left: 120px;
+    width: 30px;
+    height: 30px;
+}
+#header{
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    width: 50%;
+    justify-items: center;
+    font-size: 2.75vh;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+#navbar{
+    position: absolute;
+    left: 16.5vw;
+    text-align: center;
+    
+}
+#navbar ul{
+    list-style-type: none;
+    display: flex;
+}
+#navbar li{
+    background-color: rgba(255, 255, 255, 0);
+    width: 15vw;
+}
+#navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 4vh;
+    transition: color 0.5s ease;
+}
+#link_01:hover{
+    color: lightblue;
+
+}
+.section_01:hover #dropbtn_01{
+    color: lightblue;
+}
+#dropbtn_01{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: color 0.5s ease;
+    font-size: 4vh;
+}
+.section_01:hover #content_01{
+    display: block;
+}
+.section_01 #content_01{
+    position: absolute;
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10%;
+    display: none;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.26);
+
+}
+.section_01 #content_01 a{
+    display: block;
+    border-radius: 15%;
+
+}
+#data_01:hover{
+    color: rgba(0, 0, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
