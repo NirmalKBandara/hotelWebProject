@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <title>Nirmal_02</title>
+        <style>
+            *{
+                font-family: 'Times New Roman', Times, serif;
+            }
+            body{
+                background-image: url(image_01.jpg);
+                background-position: center;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-color:lightblue;
+            }
+            .logo{
+                position: absolute;
+                float: left;
+                top: 50px;
+                left: 50px;
+            }
+           .logoLink{
+                position: absolute;
+                display: block;
+                float: left;
+                top: 100px;
+                left: 120px;
+                width: 30px;
+                height: 30px;
+            }
+            #header{
+                position: absolute;
+                top: 65%;
+                left: 25%;
+                width: 50%;
+                justify-items: center;
+                font-size: 2.75vh;
+                background-color: rgba(255, 255, 255, 0.6);
+            }
+            #navbar{
+                position: absolute;
+                left: 16.5vw;
+                text-align: center;
+                
+            }
+            #navbar ul{
+                list-style-type: none;
+                display: flex;
+            }
+            #navbar li{
+                background-color: rgba(255, 255, 255, 0);
+                width: 15vw;
+            }
+            #navbar a{
+                text-decoration: none;
+                color: white;
+                font-size: 4vh;
+                transition: color 0.5s ease;
+            }
+            #link_01:hover{
+                color: lightblue;
+
+            }
+            .section_01:hover #dropbtn_01{
+                color: lightblue;
+            }
+            #dropbtn_01{
+                background-color: rgba(255, 255, 255, 0);
+                color: white;
+                border: none;
+                cursor: pointer;
+                transition: color 0.5s ease;
+                font-size: 4vh;
+            }
+            .section_01:hover #content_01{
+                display: block;
+            }
+            .section_01 #content_01{
+                position: absolute;
+                width: 25%;
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 10%;
+                display: none;
+                box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.26);
+
+            }
+            .section_01 #content_01 a{
+                display: block;
+                border-radius: 15%;
+
+            }
+            #data_01:hover{
+                color: rgba(0, 0, 255, 0.6);
+                background-color: rgba(255, 255, 255, 0.75);
+                box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+            }
+            .downbar{
+                position: absolute;
+                top: 90vh;
+                left: 5vw;
+                text-align: center;
+            }
+            .downbar ul{
+                list-style-type: none;
+                display: flex;
+            }
+            .downbar li{
+                color: white;
+                background-color: rgba(0, 0, 0, 0);
+                width: 15vw;
+            }
+            .downbar a{
+                text-decoration: none;
+                font-size: 4vh;
+                color: white;
+                background-color: rgba(255, 255, 255, 0);
+                transition: color 0.5s ease;
+            }
+            .content_02, .content_03, .content_04{
+                position: absolute;
+                width: 25%;
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 10%;
+                display: none;
+                box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+                
+            }
+            .data_02, .data_03, .data_04{
+                display: block;
+            }
+            .data_02:hover, .data_03:hover, .data_04:hover{
+                color: darkblue;
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 15%;
+                box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+
+            }
+            .upbtn_02, .upbtn_03, .upbtn_04{
+                font-size: 4vh;
+                border: none;
+                background-color: rgba(255, 255, 255, 0);
+                color: white;
+                cursor: pointer;
+                transition: color 0.5s ease;
+            }
+            .upbtn_02:hover, .upbtn_03:hover, .upbtn_04:hover{
+                color: rgb(28, 70, 84);
+            }
+            .link_02:hover, .link_03:hover{
+                color: rgb(28, 70, 84)
+            }
+            .section_02:hover .content_02, .section_03:hover .content_03, .section_04:hover .content_04{
+                display: block;
+                
+            }
+            
+
+
+        </style>
+    </head>
+    <body>
+        <div class="logo">
+            <img src="logo_01.png" width="150px">
+        </div>
+        <div class="logoLink">
+            <P><a href="">A</a></P>
+        </div>
+        <header id="header">
+            <h1>OCEAN LINE HOTEL</h1>
+            <p>This is a good hotel.</p>
+        </header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="###" id="link_01">Home</a></li>
+                <li><a href="###" id="link_01">Home</a></li>
+                <li><a href="###" id="link_01">Home</a></li>
+                <div class="section_01">
+                <li><button id="dropbtn_01">Drop</button></li>
+                    <div id="content_01">
+                        <a id="data_01" href="####">Link 01</a>
+                        <a id="data_01" href="####">Link 02</a>
+                        <a id="data_01" href="####">Link 03</a>
+                    </div>
+                </div>
+                <div class="section_01">
+                <li><button id="dropbtn_01">Drop</button></li>
+                    <div id="content_01">
+                        <a id="data_01" href="####">Link 01</a>
+                        <a id="data_01" href="####">Link 02</a>
+                        <a id="data_01" href="####">Link 03</a>
+                    </div>
+                </div> 
+            </ul>
+        </nav>
+        <nav class="downbar">
+            <ul>
+                <li><a href="###" class="link_02">Home</a></li>
+                <div class="section_02">
+                <li><button class="upbtn_02">Drop</button></li>
+                    <div class="content_02">
+                        <a class="data_02" href="####">Link 01</a>
+                        <a class="data_02" href="####">Link 02</a>
+                        <a class="data_02" href="####">Link 03</a>
+                    </div>
+                </div>
+                <div class="section_03">
+                <li><button class="upbtn_03">Drop</button></li>
+                    <div class="content_03">
+                        <a class="data_03" href="####">Link 01</a>
+                        <a class="data_03" href="####">Link 02</a>
+                        <a class="data_03" href="####">Link 03</a>
+                    </div>
+                </div>
+                <div class="section_04">
+                <li><button class="upbtn_04">Drop</button></li>
+                    <div class="content_04">
+                        <a class="data_04" href="####">Link 01</a>
+                        <a class="data_04" href="####">Link 02</a>
+                        <a class="data_04" href="####">Link 03</a>
+                    </div>
+                </div>
+                <li><a href="###" class="link_03">Home</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>
