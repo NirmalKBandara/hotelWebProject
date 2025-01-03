@@ -88,3 +88,73 @@
     background-color: rgba(255, 255, 255, 0.75);
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
+
+.first{
+    font-size: 120%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    
+    justify-content: center;
+    margin:50px 200px 100px 200px;
+}
+.leftphoto{
+    margin:10px 10px 0px 150px;
+    width: 500px; 
+    height: 300px; 
+    overflow: hidden;
+    float: left;
+}
+.rightphoto{
+    margin:10px 150px 0px 10px;
+    width: 500px; 
+    height: 300px; 
+    overflow: hidden;
+    float: right;
+}
+.hotels{
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+}
+.discriptionleft{
+    margin:10px 10px 0px 150px;
+    width: 400px; 
+    height: 170px;
+    background-color:white;
+    float: left;
+    position: relative;
+    left: 50px;
+    top: -50px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 3px 3px 3px 3px rgba(37, 35, 35, 0.1);
+}
+.discriptionright{
+    margin:10px 150px 0px 10px;
+    width: 400px; 
+    height: 170px; 
+    background-color: white;
+    float: right;
+    position: relative;
+    left: 50px;
+    top: -50px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 3px 3px 3px 3px rgba(37, 35, 35, 0.1);
+}
+.book{
+    position: absolute;
+    left:10px;
+    bottom: 10px;
+    width: auto;
+    height: auto;
+    color: white;
+    background-color:black;
+    padding: 10px;
+}
+.more{
+    text-decoration: underline;
+    color: rgb(44, 42, 42);
+    position: absolute;
+    right:10px;
+    bottom: 10px;
+}
