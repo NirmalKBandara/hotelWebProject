@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>Hotel Web Project.</title>
+        <style>
+           *{
+                font-family:"Cinzel" ;
+            }
+            body{
+                background-image: url(image_01.jpg);
+                background-repeat: no-repeat;
+                background-position: top;
+                background-size: 100%;
+                background-color: lightblue
+            }
+            .nav-bar{
+                display: flex;
+                border: 2px solid black;
+                font-size: 2vw;
+                position: fixed;
+                justify-content: space-between;
+                left: 18vw;
+                top: 5vh;
+                width: 80vw;
+            }
+            .data{
+                width: 15vw;
+                background-color: rgba(255, 255, 255, 0);
+                align-content:flex-start;
+                text-align: center;
+            }
+            .nav-bar a{
+                text-decoration: none;
+                color: white;
+
+            }
+            .btn{
+                border: none;
+                background-color: rgba(255, 255, 255, 0);
+                margin: 0 8vh;
+                color: white;
+            }
+            .options{
+                position: relative;
+                background-color: rgba(118, 17, 17, 0.656);
+                color: white;
+                width: 20vw;
+                top: 1vh;
+                display: none;
+                box-shadow: 1vw 1vh 1vw 1vh rgba(0, 0, 0, 0.396);
+            }
+            .btn:hover .options{
+                display:block;
+                text-align: left
+            }
+            .option{
+                padding: 0.5vw 5vh;
+            }
+            .option:hover{
+                box-shadow: 1vw 1vh 1vw 1vh rgba(0, 0, 0, 0.396);
+
+            }
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Ysabeau+SC:wght@1..1000&display=swap');
+        </style>
+    </head>
+    <body>
+        <header>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+        </header>
+        <nav class="nav-bar">
+            <div class="data"><a href="">HOTELS</a></div>
+            <div class="data"><a href="">RESTURENSTS</a></div>
+            <div class="data"><a href="">OFFERS</a></div>
+            <div id="data-01" class="data">
+                <div class="btn"><a href="">MORE</a>
+                    <div class="options">
+                        <div class="option"><a href="">FOOD MENU</a></div>
+                        <div class="option"><a href="">GALLERY</a></div>
+                        <div class="option"><a href="">VALUATION</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="data"><a href="">LOGIN</a></div>
+        </nav>
+    </body>
+
+</html>
