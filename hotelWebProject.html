@@ -10,23 +10,26 @@
                 box-sizing: border-box;
                 transition: color 0.3s ease;
             }
-            body {
+            body{
                 width: 100%;
                 height: 100%;
+                background-color: lightblue;
                 background-image: url(image_01.jpg); /* Replace with your image path */
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: cover; /* Ensure proportional resizing */
+                background-size: cover;
+                transition: background-image 1s ease-in-out;
             }
             .nav-bar{
                 display: flex;
                 font-size: 2vw;
-                position: fixed;
+                position: absolute;
                 justify-content: flex-start;
                 gap: 2vw;
                 left: 18vw;
                 top: 2vw;
                 width: 80vw;
+                z-index: 1;
             }
             .data{
                 width: 15vw;
@@ -86,8 +89,8 @@
                 position: fixed;
                 width: 10vw;
                 height: 10vw;
-                top: 0px;
-                left: 40px
+                top: 2px;
+                left: 40px;
                 
             }
             .header{
@@ -120,6 +123,8 @@
                 left: 94vw;
                 bottom: 4vw;
                 color: goldenrod;
+                z-index: 1;
+
             }
             .contact a{
                 text-decoration: none;
@@ -127,6 +132,7 @@
             }
             .inner-contact{
                 display:none;
+                box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.5);
             }
             .contact:hover{
                 color: rgba(255, 255, 255, 0);
@@ -149,45 +155,218 @@
             .inner-contact:hover {
                 background-color: rgba(255, 255, 255, 0.7);
                 color: rgb(202, 153, 29);
+                box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.125);
             }
              .fa-facebook, .fa-facebook-messenger, .fa-whatsapp, .fa-instagram{
                 font-size: 3vw;
             }
+            #backward, #forward{
+                position: absolute;
+                top: 50vh;
+                font-size: 2vw;
+                padding: 0.5vw 0.5vw;
+                border: none;
+                background-color: rgba(255, 255, 255, 0.75);
+                cursor: pointer;
+                transform: translateX(-50%);
+                z-index: 10;
+            }
+            #backward{
+                left: 80px;
+             
+            }
+            #forward{
+                right: 30px;
+            }
+            /*section-02*/
+            .section-02{
+                position: absolute;
+                top: 99vh;
+            }
+            .about{
+                position: absolute;
+                display: flex;
+                justify-items: flex-start;
+                margin: 0;
+                padding: 0;
+                width: 100vw;
+                height: 100vh;
+            }
+            .about-01, .about-02, .about-03{
+                position: absolute;
+                top: 0;
+                display: flex;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: calc(100vh/3);
+            }
+            .about-01{
+                top: 0;
+            }
+            .about-02{
+                top: 33vh;
+                justify-items: right;
 
+            }
+            .about-03{
+                top: 66vh;
+            }
+            .img-01, .img-02, .img-03{
+                background-image: url(image_01.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: calc(100vh/3);
+                width: 50vw;
+                overflow: hidden;
+                border-radius: 10%;
+            }
+            .img-01{
+                background-image: url(image_01.jpg);
+            }
+            .img-02{
+                background-image: url(image_03.jpg);
+            }
+            .img-03{
+                background-image: url(image_04.jpg);
+            }
+            .text-01, .text-02, .text-03{
+                display: flex;
+                flex-direction: column;
+                height: calc(100vh/3);
+                width: 50vw;
+                overflow: hidden;
+                justify-content: center;
+                align-items: center;
+            }
+            .text-01 h1, .text-02 h1, .text-03 h1{
+                font-size: 2vw;
+            }
+            .section-03{
+                position: absolute;
+                top: 200vh;
+            }
+            .footer{
+                display: flex;
+                width: 100vw;
+                height: 20vh;
+                border: 2px solid black;
+                justify-content: center;
+                align-items: center;
+            }
         </style>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Ysabeau+SC:wght@1..1000&display=swap');
         </style>
     </head>
     <body>
-        <header class="header">
-            <h1>OCEAN LINE HOTELS</h1>
-            <p>Where the waves meet luxury, and your journey finds a home.</p>
-        </header>
-        <nav class="nav-bar">
-            <div class="logo"><a href=""><img src="logo.jpg" width="100%"></a></div>
-            <div class="data"><a href="">HOTELS</a></div>
-            <div class="data"><a href="">RESTURENSTS</a></div>
-            <div class="data"><a href="">OFFERS</a></div>
-            <div id="data-01" class="data">
-                <div class="btn"><a href="">MORE</a>
-                    <div class="options">
-                        <div class="option"><a href="">FOOD MENU</a></div>
-                        <div class="option"><a href="">GALLERY</a></div>
-                        <div class="option"><a href="">VALUATION</a></div>
+        <section class="section-01">
+            <header class="header">
+                <h1>OCEAN LINE HOTELS</h1>
+                <p>Where the waves meet luxury, and your journey finds a home.</p>
+            </header>
+            <nav class="nav-bar">
+                <div class="logo"><a href=""><img src="logo.jpg" width="100%"></a></div>
+                <div class="data"><a href="">HOTELS</a></div>
+                <div class="data"><a href="">RESTURENSTS</a></div>
+                <div class="data"><a href="">OFFERS</a></div>
+                <div id="data-01" class="data">
+                    <div class="btn"><a href="">MORE</a>
+                        <div class="options">
+                            <div class="option"><a href="">FOOD MENU</a></div>
+                            <div class="option"><a href="">GALLERY</a></div>
+                            <div class="option"><a href="">VALUATION</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="data-02" class="data"><a href="">LOGIN</a></div>
+            </nav>
+            <div class="contact">
+                <i class="fab fa-facebook-messenger"></i> <!-- Messenger Icon -->
+                <div class="inner-contact">
+                    <a href=""><i class="fab fa-facebook"></i></a> <!-- Facebook Icon -->
+                    <a href=""><i class="fab fa-whatsapp"></i></a> <!-- WhatsApp Icon -->
+                    <a href=""><i class="fab fa-instagram"></i></a> <!-- Instagram Icon -->
+                </div>
+            </div>
+            <div class="gallery">
+                <button id="backward">⫷</button>
+                <button id="forward">⫸</button>
+                
+            </div>
+        </section>
+        <section class="section-02">
+            <div class="about">
+                <div class="about-01">
+                    <div class="img-01" ></div>
+                    <div class="text-01">
+                        <h1>Hello how are you</h1>
+                        <p>This is awsome</p>
+                    </div>
+                </div>
+                <div class="about-02"></div>
+                <div class="about-02">
+                    <div class="text-02">
+                        <h1>Hello how are you</h1>
+                        <p>This is awsome</p>
+                    </div>
+                    <div class="img-02"></div>
+                </div>
+                <div class="about-03"></div>
+                <div class="about-03">
+                    <div class="img-03"></div>
+                    <div class="text-03">
+                        <h1>Hello how are you</h1>
+                        <p>This is awsome</p>
                     </div>
                 </div>
             </div>
-            <div id="data-02" class="data"><a href="">LOGIN</a></div>
-        </nav>
-        <div class="contact">
-            <i class="fab fa-facebook-messenger"></i> <!-- Messenger Icon -->
-            <div class="inner-contact">
-                <a href=""><i class="fab fa-facebook"></i></a> <!-- Facebook Icon -->
-                <a href=""><i class="fab fa-whatsapp"></i></a> <!-- WhatsApp Icon -->
-                <a href=""><i class="fab fa-instagram"></i></a> <!-- Instagram Icon -->
-            </div>
-        </div>
+        </section>
+        <section class="section-03">
+            <footer class="footer">
+                <p>This is footer</p>
+            </footer>
+            
+        </section>
     </body>
+
+    <script>
+        const images = [
+            'image_01.jpg',
+            'image_05.jpg',
+            'image_03.jpg',
+            'image_04.jpg',
+            'image_05.jpg'
+        ];
+        let currentIndex = 0;
+        let timer;
+
+        function changeBackground() {
+            document.body.style.backgroundImage = `url(${images[currentIndex]})`;
+        }
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            changeBackground();
+            resetTimer();
+        }
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            changeBackground();
+            resetTimer();
+        }
+        function resetTimer() {
+            clearInterval(timer); // Stop the current timer
+            timer = setInterval(nextImage, 5000); // Restart the timer
+        }
+        document.getElementById('forward').addEventListener('click', nextImage);
+        document.getElementById('backward').addEventListener('click', prevImage);
+
+        // Change background automatically every 5 seconds
+        resetTimer(); // Start the timer when the page loads
+
+        // Initially set the background
+        changeBackground();
+    </script>
 
 </html>
