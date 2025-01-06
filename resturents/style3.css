@@ -9,4 +9,175 @@
 .para1{
     justify-content: center;
     text-align: center;
+    font-size: 120%;
+    padding:50px 100px 50px 100px;
 }
+
+/* starting the resturents part*/
+.first{
+    font-size: 120%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    
+    justify-content: center;
+    margin:50px 200px 100px 200px;
+}
+.leftphoto{
+    margin:10px 10px 0px 150px;
+    width: 500px; 
+    height: 300px; 
+    overflow: hidden;
+    float: left;
+}
+.rightphoto{
+    margin:10px 150px 0px 10px;
+    width: 500px; 
+    height: 300px; 
+    overflow: hidden;
+    float: right;
+}
+.hotels{
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+}
+.discriptionleft{
+    
+    margin:10px 10px 0px 150px;
+    width: 400px; 
+    height: 170px;
+    background-color:white;
+    float: left;
+    position: relative;
+    left: 50px;
+    top: -50px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 3px 3px 3px 3px rgba(37, 35, 35, 0.1);
+}
+.discriptionright{
+    margin:10px 150px 0px 10px;
+    width: 400px; 
+    height: 170px; 
+    background-color: white;
+    float: right;
+    position: relative;
+    left: 50px;
+    top: -50px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 3px 3px 3px 3px rgba(37, 35, 35, 0.1);
+}
+.book{
+    
+    position: absolute;
+    left:10px;
+    bottom: 10px;
+    width: auto;
+    height: auto;
+    color: white;
+    background-color:black;
+    padding: 10px;
+}
+
+.more{
+    text-decoration: underline;
+    color: rgb(44, 42, 42);
+    position: absolute;
+    right:10px;
+    bottom: 10px;
+}
+/* start slider*/
+#slider{
+    text-align: center;
+    margin: 0 auto;
+    width: 900px;
+    
+}
+#slider input[type=radio]{
+    display: none;
+}
+#slider label{
+    cursor: pointer;
+}
+#slides{
+    padding: 30px;
+    border: 3px solid #ccc;
+    position: relative;
+    z-index: 1;
+    width: 600px;
+}
+#overflow{
+    width: 100%;
+    overflow: hidden;
+}
+#slide1:checked ~ #slides .inner{
+    margin-left: 0;
+}
+#slide2:checked ~ #slides .inner{
+    margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner{
+    margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner{
+    margin-left: -300%;
+}
+#slides .inner{
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000) ;
+    width:400%;
+    line-height: 0;
+    height: 200px;
+}
+#slides .slide{
+    display: block;
+    float: left;
+    width: 25%;
+    height: 100%;
+    color: #fff;
+}
+#slides .slide_1{
+    background: #000;
+}
+#slides .slide_2{
+    background: #915a5a;
+}
+#slides .slide_3{
+    background: #4f2d9e;
+}
+#slides .slide_4{
+    background: #2ab385;
+}
+.slide-content{
+    padding: 10px;
+}
+#controls{
+    margin:-130px 0 0 0;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    z-index: 3;
+}
+#controls label{
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+}
+#controls label:hover{
+    opacity: 1;
+}
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide1:checked ~ #controls label:nth-last-child(3),
+#slide1:checked ~ #controls label:nth-last-child(4),
+#slide1:checked ~ #controls label:nth-last-child(1){
+    background: url('arrow.png') no-repeat;
+    float: left;
+    margin:0 0 0 -50px ;
+    display: block;
+
+}
+
+
+
+/* end*/
