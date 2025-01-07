@@ -4,17 +4,23 @@
             <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
         <style>
            *{
-                font-family:"Cinzel" ;
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
-                transition: color 0.3s ease;
+                transition: color 0.3s ease
+            }
+            h1{
+                font-family:"Cinzel"; 
+            }
+            p{
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             }
             body{
                 width: 100%;
                 height: 100%;
+                
                 background-color: lightblue;
-                background-image: url(image_01.jpg); /* Replace with your image path */
+                background-image: url(image_01.jpg);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
@@ -45,7 +51,21 @@
             .nav-bar a{
                 text-decoration: none;
                 color: white;
-
+            }
+            .login{
+                display: flex;
+                position: absolute;
+                top: 2vw;
+                font-size: 2vw;
+                right: 5vw;
+                z-index: 2;
+            }
+            .login a{
+                text-decoration: none;
+                color: white;
+            }
+            .login a:hover{
+                color: lightblue;
             }
             .btn{
                 border: none;
@@ -112,15 +132,10 @@
                 background-color: rgba(255, 255, 255, 0.7);
                 transition: background-color 0.2s ease;
             }
-            #data-02{
-                display: flex;
-                position: absolute;
-                right: -20px;
-             }
             .contact{
                 display: flex;
                 position: fixed;
-                left: 94vw;
+                right: 20px;
                 bottom: 4vw;
                 color: goldenrod;
                 z-index: 1;
@@ -144,16 +159,16 @@
                 display: flex;
                 flex-direction: column;
                 bottom: 5vw;
-                left: 93vw;
+                right: 20px;
                 gap: 1vw;
-                background-color:rgba(255, 255, 255, 0.7);
+                background-color:rgba(0, 0, 0, 0.7);
                 border-radius: 1vw;
                 padding: 1vw 1vw;
                 transition: background-color 0.2s ease;
                 
             }
             .inner-contact:hover {
-                background-color: rgba(255, 255, 255, 0.7);
+                background-color: rgba(0, 0, 0, 0.7);
                 color: rgb(202, 153, 29);
                 box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.125);
             }
@@ -178,15 +193,22 @@
             #forward{
                 right: 30px;
             }
-            /*section-02*/
             .section-02{
                 position: absolute;
-                top: 99vh;
+                top: 100vh;
+            }
+            .back-img{
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+                overflow: hidden;
+                z-index: 0;
             }
             .about{
                 position: absolute;
                 display: flex;
                 justify-items: flex-start;
+                overflow: hidden;
                 margin: 0;
                 padding: 0;
                 width: 100vw;
@@ -207,10 +229,9 @@
             .about-02{
                 top: 33vh;
                 justify-items: right;
-
             }
             .about-03{
-                top: 66vh;
+                top: 67vh;
             }
             .img-01, .img-02, .img-03{
                 background-image: url(image_01.jpg);
@@ -241,13 +262,35 @@
                 align-items: center;
             }
             .text-01 h1, .text-02 h1, .text-03 h1{
-                font-size: 2vw;
+                padding: 0.1vw 1vw;
+                font-size: 2.2vw;
+                display: flex;
+                position: absolute;
+                top: 2vw;
+                text-align: center;
+                border-radius: 1vw;
+            }
+            .text-01 p, .text-02 p, .text-03 p{
+                font-size: 1.1vw;
+                padding: 1vw;
+                display: flex;
+                position: absolute;
+                width: 40vw;
+                height: 20vh;
+                bottom: 2vw;
+                border-radius: 1vw;
+                align-content: center;
+                text-align: center;
             }
             .section-03{
+
+            }
+            .section-04{
                 position: absolute;
                 top: 200vh;
             }
             .footer{
+                background-color: black;
                 display: flex;
                 width: 100vw;
                 height: 20vh;
@@ -255,6 +298,126 @@
                 justify-content: center;
                 align-items: center;
             }
+            @media (max-width: 1024px){ 
+                .nav-bar{
+                    display: flex;
+                    font-size: 3vw;
+                    position: absolute;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 2vw;
+                    left: 18vw;
+                    top: 2vw;
+                    width: 80vw;
+                    z-index: 1;
+                }
+                .login a{
+                    font-size: 3vw;
+                }
+                .btn{
+                    position: relative;
+                    left: -1vw;
+
+                }
+                .btn:hover{
+                    position: relative;
+                    right: -6.5vw;
+                }
+                .btn:hover .options{
+                    top: 2vw;
+                    width: 27vmin;
+                }
+                .header {
+                    left: 10%;
+                    width: 70%;
+                }
+                #backward, #forward {
+                    font-size: 4vw;
+                }
+                .fa-facebook, .fa-facebook-messenger, .fa-whatsapp, .fa-instagram{
+                    font-size: 4vw;
+                }
+                .about{
+                    position: absolute;
+                    display: flex;
+                    justify-items: flex-start;
+                    overflow: hidden;
+                    margin: 0;
+                    padding: 0;
+                    width: 100vw;
+                    height: 100vh;
+                }
+                .about-01, .about-02, .about-03{
+                    position: absolute;
+                    top: 0;
+                    display: flex;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    height: calc(100vh/3);
+                }
+                .about-01{
+                    top: 0;
+                }
+                .about-02{
+                    top: 33vh;
+                    justify-items: right;
+                }
+                .about-03{
+                    top: 67vh;
+                }
+                .img-01, .img-02, .img-03{
+                    background-image: url(image_01.jpg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    height: calc(100vh/3);
+                    width: 100vw;
+                    overflow: hidden;
+                }
+                .img-01{
+                    background-image: url(image_01.jpg);
+                }
+                .img-02{
+                    background-image: url(image_03.jpg);
+                }
+                .img-03{
+                    background-image: url(image_04.jpg);
+                }
+                .text-01, .text-02, .text-03{
+                    display: flex;
+                    flex-direction: column;
+                    height: calc(100vh/3);
+                    width: 100vw;
+                    overflow: hidden;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .text-01 h1, .text-02 h1, .text-03 h1{
+                    font-size: 4vw;
+                }
+                .text-01 p, .text-02 p,.text-03 p{
+                    font-size: 1vw;
+                }
+            }
+            @media (max-width: 720px){
+                .nav-bar{
+                    font-size: 4vw
+                }
+                .login a{
+                    font-size: 4vw;
+                }
+                .header{
+                    font-size: 4vw
+                }
+                #backward, #forward {
+                    font-size: 5vw;
+               }
+               .fa-facebook, .fa-facebook-messenger, .fa-whatsapp, .fa-instagram{
+                    font-size: 5vw;
+                }
+            }
+            
         </style>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Ysabeau+SC:wght@1..1000&display=swap');
@@ -266,11 +429,12 @@
                 <h1>OCEAN LINE HOTELS</h1>
                 <p>Where the waves meet luxury, and your journey finds a home.</p>
             </header>
+            <div class="login"><a href="">LOGIN</a></div>
             <nav class="nav-bar">
-                <div class="logo"><a href=""><img src="logo.jpg" width="100%"></a></div>
-                <div class="data"><a href="">HOTELS</a></div>
+                <div class="logo"><a href=""><img src="" width="100%"></a></div>
+                <div class="data"><a href="">HOTELS&nbsp&nbsp&nbsp&nbsp&nbsp</a></div>
                 <div class="data"><a href="">RESTURENSTS</a></div>
-                <div class="data"><a href="">OFFERS</a></div>
+                <div class="data"><a href="">OFFERS&nbsp&nbsp&nbsp&nbsp&nbsp</a></div>
                 <div id="data-01" class="data">
                     <div class="btn"><a href="">MORE</a>
                         <div class="options">
@@ -280,7 +444,6 @@
                         </div>
                     </div>
                 </div>
-                <div id="data-02" class="data"><a href="">LOGIN</a></div>
             </nav>
             <div class="contact">
                 <i class="fab fa-facebook-messenger"></i> <!-- Messenger Icon -->
@@ -297,19 +460,26 @@
             </div>
         </section>
         <section class="section-02">
+        <img class="back-img" src="section_02.jpg">
             <div class="about">
                 <div class="about-01">
                     <div class="img-01" ></div>
                     <div class="text-01">
-                        <h1>Hello how are you</h1>
-                        <p>This is awsome</p>
+                        <h1>Fun Activities by the Beach</h1>
+                        <p>Ocean Line Hotel offers a range of exciting activities by the beach to make your stay unforgettable. Dive into thrilling water sports like jet-skiing, paddleboarding, and snorkeling, 
+                            or begin your mornings with calming beach yoga sessions. Evenings come alive with bonfire nights, where you can relax under the stars with live music and delicious treats. For families, 
+                            the Kids' Club provides engaging activities to keep little ones entertained, while nature lovers can explore scenic coastal trails and soak in the beauty of the surroundings.
+                        </p>
                     </div>
                 </div>
                 <div class="about-02"></div>
                 <div class="about-02">
                     <div class="text-02">
-                        <h1>Hello how are you</h1>
-                        <p>This is awsome</p>
+                        <h1>Services We Offer</h1>
+                        <p>Ocean Line Hotel offers exceptional services for a relaxing and memorable stay. Enjoy elegant rooms with stunning sea views and modern amenities, complemented by 24/7 concierge support 
+                            for all your needs. Savor gourmet dining with fresh, local flavors and direct access to our tranquil beachfront. For complete rejuvenation, unwind in our therapy rooms with soothing spa 
+                            treatments and wellness programs designed to refresh your body and mind.
+                        </p>
                     </div>
                     <div class="img-02"></div>
                 </div>
@@ -317,13 +487,19 @@
                 <div class="about-03">
                     <div class="img-03"></div>
                     <div class="text-03">
-                        <h1>Hello how are you</h1>
-                        <p>This is awsome</p>
+                        <h1>Culinary Delights at Ocean Line Hotel</h1>
+                        <p>Ocean Line Hotel takes pride in offering a delightful culinary experience. Our gourmet dining features a variety of dishes crafted from fresh, locally sourced ingredients, blending 
+                            international flavors with coastal specialties. Guests can enjoy sumptuous meals in our elegant restaurant overlooking the ocean or savor snacks and cocktails at our beachfront bar. 
+                            Whether you are craving a hearty breakfast, a refreshing lunch, or a romantic candlelit dinner, our menu promises to satisfy every palate and make every meal unforgettable.</p>
                     </div>
                 </div>
             </div>
-        </section>
         <section class="section-03">
+            <div></div>
+
+        </section>
+        </section>
+        <section class="section-04">
             <footer class="footer">
                 <p>This is footer</p>
             </footer>
@@ -334,10 +510,11 @@
     <script>
         const images = [
             'image_01.jpg',
-            'image_05.jpg',
+            'image_02.jpg',
             'image_03.jpg',
             'image_04.jpg',
-            'image_05.jpg'
+            'image_05.jpg',
+            'image_06.jpg'
         ];
         let currentIndex = 0;
         let timer;
@@ -345,20 +522,24 @@
         function changeBackground() {
             document.body.style.backgroundImage = `url(${images[currentIndex]})`;
         }
+
         function nextImage() {
             currentIndex = (currentIndex + 1) % images.length;
             changeBackground();
             resetTimer();
         }
+
         function prevImage() {
             currentIndex = (currentIndex - 1 + images.length) % images.length;
             changeBackground();
             resetTimer();
         }
+
         function resetTimer() {
             clearInterval(timer); // Stop the current timer
             timer = setInterval(nextImage, 5000); // Restart the timer
         }
+
         document.getElementById('forward').addEventListener('click', nextImage);
         document.getElementById('backward').addEventListener('click', prevImage);
 
