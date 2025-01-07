@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in / sign up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="sign-up">
+            <form action="">
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icons"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icons"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="icons"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>or use your email for registration</p>
+                <input type="text" name="txt" placeholder="Name" required>
+                <input type="email" name="txt" placeholder="Email" required>
+                <input type="password" name="txt" placeholder="Password" required>
+                <button>Submit</button>
+            </form>
+        </div>
+        <div class="log-in">
+            <form action="">
+                <h1>Log In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icons"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icons"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="icons"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>or use your account</p>
+                <input type="email" name="txt" placeholder="Email" required>
+                <input type="password" name="txt" placeholder="Password" required>
+                <p>Forgot your password ?</p>
+                <button>Submit</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="left-overlay">
+                    <h1>Welcome Back ! </h1>
+                    <p>To keep connected with us <br>please log in with your personal info</p>
+                    <button id="log-btn">Log In</button>
+                </div>
+                <div class="right-overlay">
+                    <h1>Hello Friend ! </h1>
+                    <p>Enter your personal details and start <br>journey with us</p>
+                    <button id="sign-btn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>
