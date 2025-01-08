@@ -1,0 +1,381 @@
+h1{
+    font-family:"Cinzel"; 
+}
+body{
+    background-image: url(image_01.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    transition: background-image 1s ease-in-out;
+}
+.nav-back{
+    position: fixed;
+    width: 100vw;
+    height: 12vmin;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 3;
+}
+.logo{
+    position: fixed;
+    top: 1vmin;
+    left: 4vmin;
+    z-index: 3;
+}
+.logo img{
+    width: 10vmin;
+    height: 10vmin;
+    transition: 0.3s ease;
+}
+.nav-bar{
+    position: fixed;
+    display: flex;
+    width: 70vw;
+    height: 10vmin;
+    top: 1vmin;
+    left: 16vmin;
+    gap: 2vmin;
+    justify-content:space-around;
+    align-items: center;
+    text-align: justify;
+    z-index: 3; 
+}
+.nav-bar a{
+    color: black;
+    font-size: 3vmin;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.nav-bar a:hover{
+    font-size: 3.6vmin;
+    color: darkgoldenrod;
+    transition: 0.3s ease;
+}
+.drop-menu{
+    display: none;
+    transition: 0.3s ease;
+}
+.login{
+    position: fixed;
+    right: 30px;
+    top: 4.3vmin;
+    z-index: 3;
+}
+.login a{
+    text-decoration: none;
+    font-size: 3vmin;
+    color: black;
+    transition: 0.3s ease;
+}
+.login a:hover{
+    font-size: 4vmin;
+    color: darkgoldenrod;
+    transition: 0.3s ease;
+}
+.login a:hover .login{
+    top: 3.3vmin;
+}
+
+.drop:hover .drop-menu{
+    position:fixed;
+    top: 9vmin;
+    left: 65vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vmin;
+    padding: 1vmin 4vmin;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 1vmin 1vmin 1vmin 1vmin rgba(0, 0, 0, 0.1);
+}
+.drop{
+    padding: 1vmin;
+}
+.contact{
+    display: flex;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    font-size: 3vmin;
+    padding: 1vmin;
+    border-radius: 1vmin;
+    right: 40px;
+    bottom: 4vmin;
+    z-index: 3;
+}
+.contact a{
+    color: black;
+    text-decoration: none;
+}
+.inner-contact{
+    display:none;
+    position: fixed;
+    flex-direction: column;
+    bottom: 4vmin;
+    right: 40px;
+    gap: 1vmin;
+    color: rgba(0, 0, 0, 0);
+    background-color:rgba(255, 255, 255, 0);
+    box-shadow: 1vmin 1vmin 1vmin 1vmin rgba(0, 0, 0, 0.1);
+    border-radius: 1vmin;
+    padding: 1vmin;
+    transition: 0.3s ease;
+}
+.contact:hover .fa-facebook-messenger{
+    display: none;
+    transition: 0.3s ease;
+}
+.contact:hover .inner-contact{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 4vmin;
+    right: 40px;
+    gap: 1vw;
+    color: rgba(0, 0, 0, 0);
+    background-color:rgba(255, 255, 255, 0.8);
+    border-radius: 1vmin;
+    padding: 1vmin;
+    transition: 0.3s ease;
+}
+.fa-facebook, .fa-facebook-messenger, .fa-whatsapp, .fa-instagram{
+    font-size: 3vmin;
+    transition: 0.3s ease;
+}
+.fa-facebook:hover, .fa-whatsapp:hover, .fa-instagram:hover{
+    font-size: 4.5vmin;
+    color: darkgoldenrod;
+    transition: 0.3s ease;
+}
+.header {
+    position: absolute;
+    text-align: center;
+    bottom: 4vh;
+    left: 10vw;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 70vw;
+    height: 20vmin;
+    transition: 0.3s ease;
+}
+.header h1{
+    font-size: 5vmin;
+    transition: 0.3s ease;
+}
+.header p{
+    position: relative;
+    top: -2vmin;
+    font-size: 3vmin;
+    transition: 0.3s ease;
+}
+.header:hover h1, header:hover p{
+    color: darkgoldenrod;
+    transition: 0.3s ease;
+}
+.header:hover{
+    left: 9vw;
+    bottom:3vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 1vmin 1vmin 1vmin 1vmin rgba(0, 0, 0, 0.1);
+    width: 72vw;
+    height: 22vmin;
+    transition: 0.3s ease;
+}
+.gallery #backward, .gallery #forward{
+    display: flex;
+    position: absolute;
+    top: 50vh;
+    font-size: 3vmin;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.gallery #backward{
+    left: 2vw;
+}
+.gallery #forward{
+    right: 2vw;
+}
+#backward:hover, #forward:hover{
+    font-size: 4vmin;
+    color: darkgoldenrod;
+    transition: 0.3s ease;
+}
+.section-04{
+    position: absolute;
+    left: 0;
+    top: 100vh;
+}
+.about-01{
+    display: flex;
+    top: 10vh;
+    background-color: white;
+    width: 100vw;
+    height: 60vh;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+}
+.text-01{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+    height: 30vh;
+}
+.text-01 h1 {
+    font-size: 3vw;
+}
+.text-01 p{
+    position: relative;
+    top: -2vw;
+    font-size: 1.4vw;
+}
+.about-01 img{
+    width: calc(160vw/4.5);
+    height: calc(90vw/4.5);
+    transition: 0.3s ease;
+}
+.about-01 img:hover{
+    position: relative;
+    width: calc(160vw/4);
+    height: calc(90vw/4);
+    box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.15);    transition: 0.3s ease;
+}
+.section-05{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    left: 0;
+    top: 160vh;
+    width: 100vw;
+    height:80vh;
+    background-color: rgb(220, 220, 220);
+}
+.section-05 img{
+    width: calc(160vw/9);
+    height: calc(90vw/4.5);
+    transition: 0.3s ease;
+}
+.text-02{
+    display: flex;
+    justify-content: space-evenly;
+}
+.text-02 h1{
+    font-size: 3vw;
+}
+.text-02 p{
+    width: 50vw;
+    font-size: 1.4vw;
+}
+.img-02{
+    display: flex;
+    justify-content: space-evenly;
+}
+.img-02 p{
+    font-size: 1.4vw;
+}
+.section-05 img:hover{
+    width: calc(160vw/8);
+    height: calc(90vw/4);
+    transition: 0.3s ease;
+    box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.15);    transition: 0.3s ease;
+}
+@media (max-width: 1024px){
+    .nav-back{
+        height: 27vmin;
+    }
+    .logo img{
+        width: 20vmin;
+        height: 20vmin;
+    }
+    .nav-bar{
+        flex-direction: column;
+    }
+    .nav-bar a{
+        font-size: 4vmin;
+    }
+    .login{
+        position: fixed;
+        top: 10vmin;
+    }
+    .login a{
+        font-size: 4vmin;
+    }
+    .drop:hover .drop-menu{
+        top: 27vmin;
+        left: 45vmin;
+        gap: 1vmin;
+    }
+    .contact{
+        font-size: 5vmin;
+    }
+    .fa-facebook, .fa-facebook-messenger, .fa-whatsapp, .fa-instagram{
+        font-size: 5vmin;
+    }
+    .fa-facebook:hover, .fa-whatsapp:hover, .fa-instagram:hover{
+        font-size: 6.5vmin;
+    }
+    .header {
+        left: 5vw;
+        width: 80vw;
+        height: 25vmin;
+    }
+    .header h1{
+        font-size: 6vmin;
+    }
+    .header p{
+        font-size: 4vmin;
+    }
+    .header:hover{
+        left: 4vw;
+        bottom:5vw;
+        width: 82vw;
+        height: 27vmin;
+    }
+    .gallery #backward, .gallery #forward{
+        font-size: 4vmin;
+    }
+    .gallery #backward{
+        left: 3vw;
+    }
+    .gallery #forward{
+        right: 3vw;
+    }
+    #backward:hover, #forward:hover{
+        font-size: 5vmin;
+    }
+    .text-01 h1 {
+        font-size: 3.5vw;
+    }
+    .text-01 p{
+        font-size: 2.4vw;
+    }
+    .about-01 img{
+        width: calc(160vw/3.5);
+        height: calc(90vw/3.5);
+    }
+    .about-01 img:hover{
+        width: calc(160vw/3);
+        height: calc(90vw/3);
+    }
+    .section-05 img{
+        width: calc(160vw/7);
+        height: calc(90vw/3.5);
+    }
+    .text-02 h1{
+        position: relative;
+        top: 5vmin;
+        font-size: 4vw;
+    }
+    .text-02 p{
+        font-size: 2.4vw;
+    }
+    .img-02 p{
+        font-size: 2vw;
+    }
+    .section-05 img:hover{
+        width: calc(160vw/6);
+        height: calc(90vw/3);
+    }
+}
