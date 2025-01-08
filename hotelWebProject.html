@@ -20,24 +20,30 @@
             body{
                 width: 100%;
                 height: 100%;
-                
-                background-color: lightblue;
+                background-color: rgb(255, 255, 255);
                 background-image: url(image_01.jpg);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
                 transition: background-image 1s ease-in-out;
             }
+            .behind{
+                position: fixed;
+                background-color: white;
+                width: 100%;
+                height: 10vmin;
+                z-index: 19;
+            }
             .nav-bar{
                 display: flex;
-                font-size: 2vw;
-                position: absolute;
+                font-size: 2vmin;
+                position: fixed;
                 justify-content: flex-start;
                 gap: 2vw;
-                left: 18vw;
-                top: 2vw;
+                left: 18vmin;
+                top: 4vmin;
                 width: 80vw;
-                z-index: 1;
+                z-index: 20;
             }
             .data{
                 width: 15vw;
@@ -52,22 +58,25 @@
             }
             .nav-bar a{
                 text-decoration: none;
-                color: white;
+                color: rgb(0, 0, 0);
             }
             .login{
                 display: flex;
-                position: absolute;
-                top: 2vw;
-                font-size: 2vw;
-                right: 5vw;
-                z-index: 2;
+                position: fixed;
+                top: 4vmin;
+                font-size: 2vmin;
+                right: 50px;
+                z-index: 21;
             }
             .login a{
                 text-decoration: none;
-                color: white;
+                color: rgb(0, 0, 0);
+                z-index: 21;
             }
             .login a:hover{
                 color: lightblue;
+                z-index: 21;
+
             }
             .btn{
                 border: none;
@@ -109,8 +118,8 @@
             .logo{
                 float: left;
                 position: fixed;
-                width: 10vw;
-                height: 10vw;
+                width: 9vmin;
+                height: 9vmin;
                 top: 2px;
                 left: 40px;
                 
@@ -209,17 +218,22 @@
             .about{
                 position: absolute;
                 display: flex;
-                justify-items: flex-start;
+                justify-items: center;
+                align-items: center;
                 overflow: hidden;
+                text-align: center;
                 margin: 0;
                 padding: 0;
                 width: 100vw;
                 height: 100vh;
             }
             .about-01, .about-02, .about-03{
-                position: absolute;
-                top: 0;
+                position: absolute;                
                 display: flex;
+                left: 5vw;
+                justify-items: center;
+                align-items: center;
+                text-align: center;
                 margin: 0;
                 padding: 0;
                 width: 100%;
@@ -240,10 +254,16 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
-                height: calc(100vh/3);
-                width: 50vw;
+                height: 30vh;
+                width: 40vw;
                 overflow: hidden;
-                border-radius: 10%;
+                transition: 0.2s ease;
+            }
+            .img-01:hover, .img-02:hover, .img-03:hover{
+                height: 35vh;
+                width: 45vw;
+                transition: 0.2s ease;
+            
             }
             .img-01{
                 background-image: url(image_01.jpg);
@@ -420,6 +440,7 @@
         </style>
     </head>
     <body>
+        <div class="behind"></div>
         <section class="section-01">
             <header class="header">
                 <h1>OCEAN LINE HOTELS</h1>
@@ -427,7 +448,7 @@
             </header>
             <div class="login"><a href="login/login.html">LOGIN</a></div>
             <nav class="nav-bar">
-                <div class="logo"><a href=""><img src="" width="100%"></a></div>
+                <div class="logo"><a href=""><img src="logo.jpg" width="100%"></a></div>
                 <div class="data"><a href="">HOTELS&nbsp&nbsp&nbsp&nbsp&nbsp</a></div>
                 <div class="data"><a href="">RESTURENSTS</a></div>
                 <div class="data"><a href="">OFFERS&nbsp&nbsp&nbsp&nbsp&nbsp</a></div>
