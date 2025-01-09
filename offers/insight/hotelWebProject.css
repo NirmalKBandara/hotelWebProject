@@ -14,8 +14,7 @@ p{
 body{
     width: 100%;
     height: 100%;
-    
-    background-color: rgb(173, 216, 230);
+    background-color: rgb(235, 216, 167);
     background-image: url(image_01.jpg);
     background-repeat: no-repeat;
     background-position: center;

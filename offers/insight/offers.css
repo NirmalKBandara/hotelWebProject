@@ -12,7 +12,7 @@
     outline: auto;
     outline-color: rgb(255, 255, 255);
     outline-style: solid;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:'Cinzel';
     position: absolute;
     top: 20%; 
     left: 40%; 
@@ -32,8 +32,6 @@
     padding-left:8% ;
     padding-right: 8%;
 
-
-
     }
 
 
@@ -42,7 +40,7 @@
     text-align:center; 
     font-family:Georgia, 'Times New Roman', Times, serif; 
     font-weight:bold ;
-    font-size:3vw;
+    font-size:3.5vw;
     margin-top:3vw ;
     margin-bottom: 3vw;
 }
