@@ -42,6 +42,7 @@ body{
     width: 15vw;
     align-content:flex-start;
     text-align: center;
+<<<<<<< Updated upstream
 }
 .data a:hover{
     color: lightblue;
@@ -354,4 +355,7 @@ header:hover{
     font-size: 80%;
     clear: both;
     float: left;
+=======
+    font-size: 130%;
+>>>>>>> Stashed changes
 }
