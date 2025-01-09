@@ -18,6 +18,7 @@ body{
     top: 5vw;
     width: 70vw;
     height: 50vw;
+    min-height:600px;
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -187,6 +188,11 @@ button:active{
     color: white;
     transform: scale(1.2);
 }
+@media (max-width:1050px) {
+    .left-overlay , .right-overlay{
+        padding: 0;
+    }
+}
 @media (max-width:850px) {
     h1{
         font-size: 28px;
@@ -207,6 +213,9 @@ button:active{
     }
     input{
         padding: 10px 13px;
+    }
+    .left-overlay , .right-overlay{
+        padding: 0 50 0 0;
     }
 }
 @media (max-width:730px) {
