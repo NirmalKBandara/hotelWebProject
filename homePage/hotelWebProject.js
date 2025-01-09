@@ -1,11 +1,11 @@
 
 const images = [
-    'image_01.jpg',
-    'image_02.jpg',
-    'image_03.jpg',
-    'image_04.jpg',
-    'image_05.jpg',
-    'image_06.jpg'
+    'images/image_01.jpg',
+    'images/image_02.jpg',
+    'images/image_03.jpg',
+    'images/image_04.jpg',
+    'images/image_05.jpg',
+    'images/image_06.jpg'
 ];
 let currentIndex = 0;
 let timer;
