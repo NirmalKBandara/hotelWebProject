@@ -26,13 +26,13 @@ function moveImages(n) {
 }
 function left() {
     thumbImageList[currentIndex].classList.remove("active");
-    moveImages(currentIndex + 1);
+    moveImages(currentIndex - 1);
 }
 leftBtn.addEventListener("click", left);
 
 function right() {
     thumbImageList[currentIndex].classList.remove("active");
-    moveImages(currentIndex - 1);
+    moveImages(currentIndex + 1);
 }
 rightBtn.addEventListener("click", right);
 
@@ -51,7 +51,7 @@ for (let j = 0; j < thumbImageList.length; j++) {
 
 thumbImageList[0].classList.add("active");
 
-const leftslide = setInterval(left,5000);
+const leftslide = setInterval(right,5000);
 
 
 

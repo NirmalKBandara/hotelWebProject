@@ -139,65 +139,68 @@
 .header{
     display: flex;
     flex-direction: column;
-    float: left;
-    background-color: rgba(255, 255, 255, 0.35);
-    color: rgb(255, 255, 255);
-    padding: 2vw 4vw;
-    position: absolute;
-    bottom: 4vw;
-    left: 15vw;
-    font-size: 2vw;
-    transition: background-color 0.2s ease;
-    border-radius: 1vw;
+    gap: 1vmin;
+    padding: 1vmin 4vmin;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 1vmin 1vmin 1vmin 1vmin rgba(0, 0, 0, 0.1);
 }
-header:hover{
-    color: rgb(12, 72, 92);
-    background-color: rgba(255, 255, 255, 0.7);
-    transition: background-color 0.2s ease;
+.drop{
+    padding: 1vmin;
 }
 .contact{
     display: flex;
     position: fixed;
-    right: 20px;
-    bottom: 4vw;
-    color: goldenrod;
-    z-index: 1;
-
+    background-color: rgb(255, 255, 255);
+    font-size: 3vmin;
+    padding: 1vmin;
+    border-radius: 1vmin;
+    right: 40px;
+    bottom: 4vmin;
+    z-index: 3;
 }
 .contact a{
+    color: black;
     text-decoration: none;
-    color: goldenrod;
-    font-size: 3vw;
 }
 .inner-contact{
     display:none;
-    box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.5);
+    position: fixed;
+    flex-direction: column;
+    bottom: 4vmin;
+    right: 40px;
+    gap: 1vmin;
+    color: rgba(0, 0, 0, 0);
+    background-color:rgba(255, 255, 255, 0);
+    box-shadow: 1vmin 1vmin 1vmin 1vmin rgba(0, 0, 0, 0.1);
+    border-radius: 1vmin;
+    padding: 1vmin;
+    transition: 0.3s ease;
 }
-.contact:hover{
-    color: rgba(255, 255, 255, 0);
-    transition: color 0.05s ease;
-
+.contact:hover .fa-facebook-messenger{
+    display: none;
+    transition: 0.3s ease;
 }
 .contact:hover .inner-contact{
     position: fixed;
     display: flex;
     flex-direction: column;
-    bottom: 5vw;
-    right: 20px;
+    bottom: 4vmin;
+    right: 40px;
     gap: 1vw;
-    background-color:rgba(0, 0, 0, 0.7);
-    border-radius: 1vw;
-    padding: 1vw 1vw;
-    transition: background-color 0.2s ease;
-    
+    color: rgba(0, 0, 0, 0);
+    background-color:rgba(255, 255, 255, 0.8);
+    border-radius: 1vmin;
+    padding: 1vmin;
+    transition: 0.3s ease;
 }
-.inner-contact:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: rgb(202, 153, 29);
-    box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.125);
+.fa-facebook, .fa-facebook-messenger, .fa-whatsapp, .fa-instagram{
+    font-size: 3vmin;
+    transition: 0.3s ease;
 }
-.fa-facebook-messenger{
-    font-size: 3vw;
+.fa-facebook:hover, .fa-whatsapp:hover, .fa-instagram:hover{
+    font-size: 4.5vmin;
+    color: darkgoldenrod;
+    transition: 0.3s ease;
 }
 body {
     background-image: url('image_04.jpg');
@@ -212,7 +215,7 @@ body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
-    top:50px;
+    top:100px;
     justify-content: center;
     margin:50px 200px 100px 200px;
 }
@@ -284,9 +287,8 @@ body {
 .footer{
     background-color: black;
     color: white;
-   
     clear: both;
-    height: 500px;;
+    height: 500px;
     padding: 40px 120px 50px 120px;
 }
 .about{
@@ -308,20 +310,20 @@ body {
     width: 120px;
     float: left;
 }
-.footer-links{
+.footer .footer-links{
     color: rgb(65, 75, 83);
 }
-.footer-links:hover{
+.footer .footer-links:hover{
     color:white;
 
 }
-.social{
+.footer .social{
     float: left;
     padding-left: 50px;
     
     
 }
-.social-icons a {
+.footer .social-icons a {
     text-decoration: none;
     color: rgb(65, 75, 83); /* Default color */
     margin: 0 10px;
@@ -329,10 +331,10 @@ body {
     transition: color 0.3s ease;
   }
   
-.social-icons a:hover {
+.footer .social-icons a:hover {
     color: #0077ff; /* Hover color */
   }
-.subs{
+.footer .subs{
     clear:both;
     position: relative;
     top:20px;
@@ -342,7 +344,7 @@ body {
     padding-right: 30px;
     padding-bottom: 10px;
   }
-.input{
+.footer .input{
     background-color: black;
     height:30px;
     border:none;

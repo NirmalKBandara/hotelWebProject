@@ -2,7 +2,7 @@ h1{
     font-family:"Cinzel"; 
 }
 body{
-    background-image: url(image_01.jpg);
+    background-image: url(images/image_01.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -137,11 +137,11 @@ body{
     padding: 1vmin;
     transition: 0.3s ease;
 }
-.fa-facebook, .fa-facebook-messenger, .fa-whatsapp, .fa-instagram{
+.contact .fa-facebook, .contact .fa-facebook-messenger, .contact .fa-whatsapp, .contact .fa-instagram{
     font-size: 3vmin;
     transition: 0.3s ease;
 }
-.fa-facebook:hover, .fa-whatsapp:hover, .fa-instagram:hover{
+.contact .fa-facebook:hover, .contact .fa-whatsapp:hover, .contact .fa-instagram:hover{
     font-size: 4.5vmin;
     color: darkgoldenrod;
     transition: 0.3s ease;
@@ -281,6 +281,108 @@ body{
     transition: 0.3s ease;
     box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.15);    transition: 0.3s ease;
 }
+.footer{
+   position: absolute;
+    background-color: black;
+    color: white;
+    left: 0;
+    top: 240vh;
+    clear: both;
+    width: 80vw;
+    height: 30vh;;
+    padding: 10vmin 10vw;
+}
+.about-00{
+    height: 170px;
+    width: 470px;
+    border-color:white;
+    border-right: 1px solid;
+    padding-right: 50px;
+    float: left;
+}
+.links{
+    float: left;
+    padding-left: 50px;
+    border-color:white;
+    border-right: 1px solid;
+    height: 170px;
+}
+.bar{
+    width: 120px;
+    float: left;
+}
+.footer-links{
+    color: rgb(65, 75, 83);
+}
+.footer-links:hover{
+    color:white;
+
+}
+.social{
+    float: left;
+    padding-left: 50px;
+    
+    
+}
+.social-icons a {
+    text-decoration: none;
+    color: rgb(65, 75, 83); /* Default color */
+    margin: 0 10px;
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s ease;
+  }
+  
+.social-icons a:hover {
+    color: #0077ff; /* Hover color */
+  }
+.subs{
+    clear:both;
+    position: relative;
+    top:20px;
+    border-color:white;
+    border-right: 1px solid;
+    float: left;
+    padding-right: 30px;
+    padding-bottom: 10px;
+  }
+.input{
+    background-color: black;
+    height:30px;
+    border:none;
+    border-bottom: 2px rgb(65, 75, 83) solid;
+}
+.input:hover{
+    background-color:rgb(65, 75, 83) ;
+    border: none;
+}
+.button{
+    color: white;
+    background-color:rgb(65, 75, 83);
+    height: 30px;
+    padding: 2px 5px 2px 5px;
+}
+
+.fcontact{
+    float: left;
+    top: 20px;
+    padding-left: 30px;
+
+}
+.contact-icons {
+    font-size: 18px;
+    color: #333;
+  }
+  
+.contact-icons i {
+    margin-right: 8px;
+  }
+.rights{
+    padding-top:20px;
+    color: rgb(65, 75, 83);
+    font-size: 80%;
+    clear: both;
+    float: left;
+}
 @media (max-width: 1024px){
     .nav-back{
         height: 27vmin;
@@ -310,10 +412,10 @@ body{
     .contact{
         font-size: 5vmin;
     }
-    .fa-facebook, .fa-facebook-messenger, .fa-whatsapp, .fa-instagram{
+    .contact .fa-facebook, .contact .fa-facebook-messenger, .contact .fa-whatsapp, .contact .fa-instagram{
         font-size: 5vmin;
     }
-    .fa-facebook:hover, .fa-whatsapp:hover, .fa-instagram:hover{
+    .contact .fa-facebook:hover, .contact .fa-whatsapp:hover, .contact .fa-instagram:hover{
         font-size: 6.5vmin;
     }
     .header {
@@ -378,4 +480,12 @@ body{
         width: calc(160vw/6);
         height: calc(90vw/3);
     }
+.footer{
+     height: 50vh;;
+    }
+}
+@media (max-width:650px) {
+    .footer{
+        height: 70vh;;
+       }
 }

@@ -14,10 +14,11 @@ body{
     margin: 8%;
 }
 .container{
-    position: relative;
-    width: 768px;
-    max-width: 100%;
-    min-height: 480px;
+    position: absolute;
+    top: 5vw;
+    width: 70vw;
+    height: 50vw;
+    min-height:600px;
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -128,6 +129,8 @@ button:active{
 }
 .overlay{
     position: relative;
+    display: flex;
+    flex-direction: column;
     color: #000;
     background: lightblue;
     left: -100%;
@@ -148,7 +151,7 @@ button:active{
     height: 100%;
     text-align: center;
     top: 0;
-    padding: 0 30px;
+    padding: 0 5vw;
     transform: translateX(0);
     transition: all 0.5s ease-in-out;
 }
@@ -185,6 +188,11 @@ button:active{
     color: white;
     transform: scale(1.2);
 }
+@media (max-width:1050px) {
+    .left-overlay , .right-overlay{
+        padding: 0;
+    }
+}
 @media (max-width:850px) {
     h1{
         font-size: 28px;
@@ -205,6 +213,9 @@ button:active{
     }
     input{
         padding: 10px 13px;
+    }
+    .left-overlay , .right-overlay{
+        padding: 0 50 0 0;
     }
 }
 @media (max-width:730px) {

@@ -2,14 +2,15 @@
 <html>
 <head>
     <title>Offers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="insight/hotelWebProject.css">
     <link rel="stylesheet" href="insight/offers.css">
-
-
-
-
+    <link rel="stylesheet" href="price.css">
 
     <style>
+        h1{
+        font-family:"Cinzel"; 
+        }   
         #preloader {
             position: fixed;
             top: 0;
@@ -21,15 +22,114 @@
             justify-content: center;
             align-items: center;
             z-index: 10000;
-        }
-
-      
+        }   
         #loader-logo {
             width: 100px;
-            animation: spin 3s linear infinite;
+            animation: 3s linear infinite;
+        }
+        
+        .section-02 .footer{
+            background-color: black;
+            color: white;
+            position: absolute;
+            left: -10vw;
+            top: 160vw;
+            width: 102vw;
+            height: auto;
+            clear: both;
+            padding: 10vmin 10vmin;
+        }
+        .section-02 .about-00{
+            height: 170px;
+            width: 470px;
+            border-color:white;
+            border-right: 1px solid;
+            padding-right: 50px;
+            float: left;
+        }
+        .section-02 .links{
+            float: left;
+            padding-left: 50px;
+            border-color:white;
+            border-right: 1px solid;
+            height: 170px;
+        }
+        .section-02 .bar{
+            width: 120px;
+            float: left;
+        }
+        .section-02 .footer-links{
+            color: rgb(65, 75, 83);
+        }
+        .section-02 .footer-links:hover{
+            color:white;
+
+        }
+        .section-02 .social{
+            float: left;
+            padding-left: 50px;
+            
+            
+        }
+        .section-02 .social-icons a {
+            text-decoration: none;
+            color: rgb(65, 75, 83); /* Default color */
+            margin: 0 10px;
+            font-size: 24px; /* Icon size */
+            transition: color 0.3s ease;
+        }
+        
+        .section-02 .social-icons a:hover {
+            color: #0077ff; /* Hover color */
+        }
+        .section-02 .subs{
+            clear:both;
+            position: relative;
+            top:20px;
+            border-color:white;
+            border-right: 1px solid;
+            float: left;
+            padding-right: 30px;
+            padding-bottom: 10px;
+        }
+        .section-02 .input{
+            background-color: black;
+            height:30px;
+            border:none;
+            border-bottom: 2px rgb(65, 75, 83) solid;
+        }
+        .section-02 .input:hover{
+            background-color:rgb(65, 75, 83) ;
+            border: none;
+        }
+        .section-02 .button{
+            color: white;
+            background-color:rgb(65, 75, 83);
+            height: 30px;
+            padding: 2px 5px 2px 5px;
         }
 
+        .section-02 .fcontact{
+            float: left;
+            top: 20px;
+            padding-left: 30px;
 
+        }
+        .section-02 .contact-icons {
+            font-size: 18px;
+            color: #333;
+        }
+        
+        .section-02 .contact-icons i {
+            margin-right: 8px;
+        }
+        .section-02 .rights{
+            padding-top:20px;
+            color: rgb(65, 75, 83);
+            font-size: 80%;
+            clear: both;
+            float: left;
+        }
         @keyframes spin {
             0% {
                 transform: rotate(0deg);
@@ -61,15 +161,28 @@
 
 
 
-
-
-
-
-    <div style="padding-top: 70px;">
-        <img alt="Hotel Image" alt="Hotel Image" src="photos/pexels-donaldtong94-189296.jpg" class="background-photo">
-        <h1 CLASS="text-overlay"> &#8212 OFFERS & PROMOTIONS &#8212</h1>
+<div class="Top-Bar">
+    <div  class="Left-top">
+        <img src="insight/insight-photo/Black Gold Illustrative Vintage Baroque Hotel Restaurant Logo (3).png"
+        alt="Logo" style="width:65px ;height: auto;border-radius:32 ;border: none;">
     </div>
-    <h1 class="h1-text">&#8212 MEMBER RATES &#8212</h1>
+
+    <div class="Mid-top">
+        <div class="search-container">
+            <input type="search" class="search-input" placeholder="Enter PromoCode">
+            <a href="https://cdn.dribbble.com/userupload/2905384/file/original-93c7c3593e7d733ddd8ca2fd83ac0ed4.png?compress=1&resize=1504x1128"><button class="search-button">Search</button></a>
+          </div>
+    </div>
+    <div  class="Right-top">
+            <p style="font-family: 'Cinzel';"> LOGIN</p>
+    </div>
+</div>
+
+    <div >
+        <img alt="Hotel Image" alt="Hotel Image" src="photos/pexels-pixabay-161758.jpg" class="background-photo">
+        <h1 CLASS="text-overlay" style="font-family: 'Cinzel';"> &#8212 OFFERS & PROMOTIONS &#8212</h1>
+    </div>
+    <h1 class="h1-text" style="font-family: 'Cinzel';">&#8212 MEMBER RATES &#8212</h1>
     <div class="box" >
 
         <div class="photo-text"> 
@@ -108,14 +221,8 @@
         </div>
 
     </div>
-
-
-
-
-
-
  <div>
-    <h1 class="h1-text">&#8212 EXCLUSIVE OFFERS &#8212  </h1>
+    <h1 class="h1-text" style="font-family: 'Cinzel';">&#8212 EXCLUSIVE OFFERS &#8212  </h1>
 </div>
 <div class="box" >
 
@@ -153,12 +260,48 @@
         <p class="Validity-text">Validity:Round the year</p>
         <a href="insight/insight1 - Copy (7).html"> <button class="Know-button">Know More..</button></a>
     </div>
-
-
-
-
-
-    <div style="height: 1000px;"></div>
+<section class="section-02">
+    <div class="footer">
+        <div class="links">
+            <h3>Quick links</h3>
+            <div class="bar">
+                <a class="footer-links">Home</a><br>
+                <a class="footer-links">Resturants</a><br>
+                <a class="footer-links">Offers</a><br>
+                <a class="footer-links">Gallery</a>
+                </div>
+            <div class="bar">
+                <a class="footer-links">Foods</a><br>
+                <a class="footer-links">Hotels</a><br>
+                <a class="footer-links">Events</a> <br> 
+            </div>
+        </div>
+        <div class="social">
+            <h3>Connect with us</h3>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="subs">
+            <h5>SUBSCRIBE FOE LATEST UPDATES</h5>
+            <input placeholder="Enter your Email Address" class="input">
+            <button class="button">Subscribe</button>
+        </div>
+        <div class="fcontact">
+            <h2>Contact info</h2>
+            <div class="contact-icons">
+                <i class="fas fa-phone"></i> +123 456 7890&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fas fa-envelope"></i> info@example.com
+            </div>
+        </div>
+        <div class="rights">
+            <p>© 2025 The Ocean Line Hotels . All Rights Reserved.</p>
+        </div>
+    </div>
+</section>
 </body>
 
 </html>
