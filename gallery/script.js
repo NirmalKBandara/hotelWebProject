@@ -26,13 +26,13 @@ function moveImages(n) {
 }
 function left() {
     thumbImageList[currentIndex].classList.remove("active");
-    moveImages(currentIndex + 1);
+    moveImages(currentIndex - 1);
 }
 leftBtn.addEventListener("click", left);
 
 function right() {
     thumbImageList[currentIndex].classList.remove("active");
-    moveImages(currentIndex - 1);
+    moveImages(currentIndex + 1);
 }
 rightBtn.addEventListener("click", right);
 
