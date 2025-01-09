@@ -1,0 +1,383 @@
+.nav-back{
+    position: fixed;
+    width: 100vw;
+    height: 9vmin;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 3;
+}
+.logo{
+    position: fixed;
+    top: 1vmin;
+    left: 4vmin;
+    z-index: 3;
+}
+.logo img{
+    width: 10vmin;
+    height: 10vmin;
+    transition: 0.3s ease;
+}
+.nav-bar{
+    position: fixed;
+    display: flex;
+    width: 70vw;
+    height: 10vmin;
+    top: 1vmin;
+    left: 16vmin;
+    gap: 2vmin;
+    justify-content:space-around;
+    align-items: center;
+    text-align: justify;
+    z-index: 3; 
+}
+.nav-bar a{
+    color: black;
+    font-size: 3vmin;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.nav-bar a:hover{
+    font-size: 3.6vmin;
+    color: darkgoldenrod;
+    transition: 0.3s ease;
+}
+.drop-menu{
+    display: none;
+    transition: 0.3s ease;
+}
+.login{
+    position: fixed;
+    right: 30px;
+    top: 4.3vmin;
+    z-index: 3;
+}
+.login a{
+    text-decoration: none;
+    font-size: 3vmin;
+    color: black;
+    transition: 0.3s ease;
+}
+.login a:hover{
+    font-size: 4vmin;
+    color: darkgoldenrod;
+    transition: 0.3s ease;
+}
+.login a:hover .login{
+    top: 3.3vmin;
+}
+
+.drop:hover .drop-menu{
+    position:fixed;
+    top: 9vmin;
+    left: 65vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vmin;
+    padding: 1vmin 4vmin;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 1vmin 1vmin 1vmin 1vmin rgba(0, 0, 0, 0.1);
+}
+.drop{
+    padding: 1vmin;
+}
+.contact{
+    display: flex;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    font-size: 3vmin;
+    padding: 1vmin;
+    border-radius: 1vmin;
+    right: 40px;
+    bottom: 4vmin;
+    z-index: 3;
+}
+.contact a{
+    color: black;
+    text-decoration: none;
+}
+.inner-contact{
+    display:none;
+    position: fixed;
+    flex-direction: column;
+    bottom: 4vmin;
+    right: 40px;
+    gap: 1vmin;
+    color: rgba(0, 0, 0, 0);
+    background-color:rgba(255, 255, 255, 0);
+    box-shadow: 1vmin 1vmin 1vmin 1vmin rgba(0, 0, 0, 0.1);
+    border-radius: 1vmin;
+    padding: 1vmin;
+    transition: 0.3s ease;
+}
+.contact:hover .fa-facebook-messenger{
+    display: none;
+    transition: 0.3s ease;
+}
+.contact:hover .inner-contact{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 4vmin;
+    right: 40px;
+    gap: 1vw;
+    color: rgba(0, 0, 0, 0);
+    background-color:rgba(255, 255, 255, 0.8);
+    border-radius: 1vmin;
+    padding: 1vmin;
+    transition: 0.3s ease;
+}
+
+.contact .fa-facebook, .contact .fa-facebook-messenger, .contact .fa-whatsapp, .contact .fa-instagram{
+    font-size: 3vmin;
+    transition: 0.3s ease;
+}
+.contact .fa-facebook:hover, .contact .fa-whatsapp:hover, .contact .fa-instagram:hover {
+    font-size: 4.5vmin;
+    color: darkgoldenrod;
+    transition: 0.3s ease;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.35);
+    color: rgb(255, 255, 255);
+    padding: 2vw 4vw;
+    position: absolute;
+    bottom: 4vw;
+    left: 15vw;
+    font-size: 2vw;
+    transition: background-color 0.2s ease;
+    border-radius: 1vw;
+}
+header:hover{
+    color: rgb(12, 72, 92);
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: background-color 0.2s ease;
+}
+.contact{
+    display: flex;
+    position: fixed;
+    right: 20px;
+    bottom: 4vw;
+    color: goldenrod;
+    z-index: 1;
+
+}
+.contact a{
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 3vw;
+}
+.inner-contact{
+    display:none;
+    box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.5);
+}
+.contact:hover{
+    color: rgba(255, 255, 255, 0);
+    transition: color 0.05s ease;
+
+}
+.contact:hover .inner-contact{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 5vw;
+    right: 20px;
+    gap: 1vw;
+    background-color:rgba(0, 0, 0, 0.7);
+    border-radius: 1vw;
+    padding: 1vw 1vw;
+    transition: background-color 0.2s ease;
+    
+}
+.inner-contact:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(202, 153, 29);
+    box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.125);
+}
+.fa-facebook-messenger{
+    font-size: 3vw;
+}
+body {
+    background-image: url('image_02.jpg');
+    background-size: cover; /* Scale the image to cover the entire area */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+  }
+
+
+.first{
+    font-size: 120%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top:100px;
+    justify-content: center;
+    margin:50px 200px 150px 200px;
+    
+}
+.leftphoto{
+    margin:10px 10px 0px 150px;
+    width: 500px; 
+    height: 300px; 
+    overflow: hidden;
+    float: left;
+}
+.rightphoto{
+    margin:10px 150px 0px 10px;
+    width: 500px; 
+    height: 300px; 
+    overflow: hidden;
+    float: right;
+}
+.hotels{
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+}
+.discriptionleft{
+    margin:10px 10px 0px 150px;
+    width: 400px; 
+    height: 170px;
+    background-color:white;
+    float: left;
+    position: relative;
+    left: 50px;
+    top: -50px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 3px 3px 3px 3px rgba(37, 35, 35, 0.1);
+    clear: both;
+}
+.discriptionright{
+    margin:10px 150px 0px 10px;
+    width: 400px; 
+    height: 170px; 
+    background-color: white;
+    float: right;
+    position: relative;
+    left: 50px;
+    top: -50px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 3px 3px 3px 3px rgba(37, 35, 35, 0.1);
+    clear: both;
+}
+.book{
+    position: absolute;
+    left:10px;
+    bottom: 10px;
+    width: auto;
+    height: auto;
+    color: white;
+    background-color:black;
+    padding: 10px;
+}
+.more{
+    text-decoration: underline;
+    color: rgb(44, 42, 42);
+    position: absolute;
+    right:10px;
+    bottom: 10px;
+}
+
+/*footer*/
+.footer{
+    background-color: black;
+    color: white;
+   
+    clear: both;
+    height: 500px;;
+    padding: 40px 120px 50px 120px;
+}
+.about{
+    height: 170px;
+    width: 470px;
+    border-color:white;
+    border-right: 1px solid;
+    padding-right: 50px;
+    float: left;
+}
+.links{
+    float: left;
+    padding-left: 50px;
+    border-color:white;
+    border-right: 1px solid;
+    height: 170px;
+}
+.bar{
+    width: 120px;
+    float: left;
+}
+.footer-links{
+    color: rgb(65, 75, 83);
+}
+.footer-links:hover{
+    color:white;
+
+}
+.social{
+    float: left;
+    padding-left: 50px;
+    
+    
+}
+.social-icons a {
+    text-decoration: none;
+    color: rgb(65, 75, 83); /* Default color */
+    margin: 0 10px;
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s ease;
+  }
+  
+.social-icons a:hover {
+    color: #0077ff; /* Hover color */
+  }
+.subs{
+    clear:both;
+    position: relative;
+    top:20px;
+    border-color:white;
+    border-right: 1px solid;
+    float: left;
+    padding-right: 30px;
+    padding-bottom: 10px;
+  }
+.input{
+    background-color: black;
+    height:30px;
+    border:none;
+    border-bottom: 2px rgb(65, 75, 83) solid;
+}
+.input:hover{
+    background-color:rgb(65, 75, 83) ;
+    border: none;
+}
+.button{
+    color: white;
+    background-color:rgb(65, 75, 83);
+    height: 30px;
+    padding: 2px 5px 2px 5px;
+}
+
+.fcontact{
+    float: left;
+    top: 20px;
+    padding-left: 30px;
+
+}
+.contact-icons {
+    font-size: 18px;
+    color: #333;
+  }
+  
+.contact-icons i {
+    margin-right: 8px;
+  }
+.rights{
+    padding-top:20px;
+    color: rgb(65, 75, 83);
+    font-size: 80%;
+    clear: both;
+    float: left;
+}
