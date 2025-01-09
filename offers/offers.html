@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="insight/hotelWebProject.css">
     <link rel="stylesheet" href="insight/offers.css">
     <link rel="stylesheet" href="price.css">
-
+    <link rel="Icon" type="imgae/png" href="/logo.png">
     <style>
         h1{
         font-family:"Cinzel"; 
@@ -22,7 +22,10 @@
             justify-content: center;
             align-items: center;
             z-index: 10000;
-        }   
+        }
+        .Right-top a:hover{
+            color: darkgoldenrod;
+        }
         #loader-logo {
             width: 100px;
             animation: 3s linear infinite;
@@ -147,7 +150,7 @@
 
 
     <div id="preloader">
-        <img src="insight/insight-photo/Black Gold Illustrative Vintage Baroque Hotel Restaurant Logo (3).png" 
+        <img src="logo.png" 
         alt="Loading" id="loader-logo" style="width: 50%; height: auto;" >
     </div>
     <script>
@@ -163,8 +166,8 @@
 
 <div class="Top-Bar">
     <div  class="Left-top">
-        <img src="insight/insight-photo/Black Gold Illustrative Vintage Baroque Hotel Restaurant Logo (3).png"
-        alt="Logo" style="width:65px ;height: auto;border-radius:32 ;border: none;">
+        <a href="/homePage/hotelWebProject.html"><img src="insight/insight-photo/Black Gold Illustrative Vintage Baroque Hotel Restaurant Logo (3).png"
+        alt="Logo" style="width:65px ;height: auto;border-radius:32 ;border: none;"></a>
     </div>
 
     <div class="Mid-top">
@@ -174,7 +177,7 @@
           </div>
     </div>
     <div  class="Right-top">
-            <p style="font-family: 'Cinzel';"> LOGIN</p>
+            <a href="/login/login.html" style="text-decoration: none; color: black; "><p style="font-family: 'Cinzel';"> LOGIN</a>
     </div>
 </div>
 

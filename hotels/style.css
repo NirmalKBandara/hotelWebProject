@@ -59,6 +59,7 @@
     transition: 0.3s ease;
 }
 .login a:hover{
+    right: 0px;
     font-size: 4vmin;
     color: darkgoldenrod;
     transition: 0.3s ease;
@@ -186,7 +187,7 @@ header:hover{
     bottom: 5vw;
     right: 20px;
     gap: 1vw;
-    background-color:rgba(0, 0, 0, 0.7);
+    background-color:rgba(255, 255, 255, 0.9);
     border-radius: 1vw;
     padding: 1vw 1vw;
     transition: background-color 0.2s ease;
@@ -284,11 +285,24 @@ body {
 /*footer*/
 .footer{
     background-color: black;
+    top: 2300px;
     color: white;
-   
+    position: absolute;
+    left: 0;
+    width: 88vw;
     clear: both;
-    height: 500px;;
+    height: 300px;
     padding: 40px 120px 50px 120px;
+}
+@media (max-width:1276px) {
+    .footer{
+        top: 3375px;
+    }
+}
+@media (max-width:1183px) {
+    .footer{
+    height: 700px;
+    }
 }
 .about{
     height: 170px;

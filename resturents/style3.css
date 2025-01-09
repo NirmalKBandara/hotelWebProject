@@ -1,7 +1,7 @@
 .nav-back{
     position: fixed;
     width: 100vw;
-    height: 9vmin;
+    height: 12vmin;
     top: 0;
     left: 0;
     background-color: white;
@@ -287,6 +287,9 @@ body {
 .footer{
     background-color: black;
     color: white;
+    position: relative;
+    left: -0.5vw;
+    width: 100vw;
     clear: both;
     height: 500px;
     padding: 40px 120px 50px 120px;
