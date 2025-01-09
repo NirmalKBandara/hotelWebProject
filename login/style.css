@@ -14,10 +14,10 @@ body{
     margin: 8%;
 }
 .container{
-    position: relative;
-    width: 780px;
-    max-width: 100%;
-    min-height: 500px;
+    position: absolute;
+    top: 5vw;
+    width: 70vw;
+    height: 50vw;
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -128,6 +128,8 @@ button:active{
 }
 .overlay{
     position: relative;
+    display: flex;
+    flex-direction: column;
     color: #000;
     background: lightblue;
     left: -100%;
@@ -148,7 +150,7 @@ button:active{
     height: 100%;
     text-align: center;
     top: 0;
-    padding: 0 30px;
+    padding: 0 5vw;
     transform: translateX(0);
     transition: all 0.5s ease-in-out;
 }
