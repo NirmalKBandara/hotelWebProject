@@ -127,11 +127,12 @@
     padding: 1vmin;
     transition: 0.3s ease;
 }
-.fa-facebook, .fa-facebook-messenger, .fa-whatsapp, .fa-instagram{
+
+.contact .fa-facebook, .contact .fa-facebook-messenger, .contact .fa-whatsapp, .contact .fa-instagram{
     font-size: 3vmin;
     transition: 0.3s ease;
 }
-.fa-facebook:hover, .fa-whatsapp:hover, .fa-instagram:hover{
+.contact .fa-facebook:hover, .contact .fa-whatsapp:hover, .contact .fa-instagram:hover {
     font-size: 4.5vmin;
     color: darkgoldenrod;
     transition: 0.3s ease;
