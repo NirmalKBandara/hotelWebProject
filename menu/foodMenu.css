@@ -10,6 +10,10 @@ body{
     height: 10vh;
     font-size: 3vmin;
     background-color: #36454f;
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
     color: white;
 }
 .section-01 h1{
@@ -28,8 +32,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     flex-direction: column;
     width: 100vw;
+=======
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+>>>>>>> main
 }
 .section-02 h2{
     background-color:#36454f;
@@ -46,6 +57,7 @@ body{
     transition: 0.2s ease;
 }
 .row-00 img{
+<<<<<<< HEAD
     width: 20%; 
     height: 20%;
     transition: 0.2s ease;
@@ -66,6 +78,20 @@ body{
 .row-00 img:hover{
     width:30%;
     height:30%;
+=======
+    width: 75%; 
+    height: 75%;
+    transition: 0.2s ease;
+}
+.row-00 p{
+    font-size: 2vmin;
+    transition: 0.3s ease;
+
+}
+.row-00 img:hover{
+    width: 100%;
+    height: 100%;
+>>>>>>> main
     transition: 0.3s ease;
 }
 .row-00:hover p{
@@ -77,10 +103,18 @@ body{
     background-color: rgba(255, 255, 255, 0.75);
     box-shadow: 1vmin 1vmin 1vmin 1vmin rgba(0, 0, 0, 0.1);
     position: absolute;
+<<<<<<< HEAD
     top: 112vh;
     display: flex;
     flex-direction: column;
     width: 100vw;
+=======
+    top: 12vh;
+    left: 42%;
+    display: flex;
+    flex-direction: column;
+    width: 58%;
+>>>>>>> main
     justify-content: center;
     align-items: center;
 }

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            More-Offers
+        </title>
+        <link rel="stylesheet" href="offers.css">
+        <link rel="stylesheet" href="hotelWebProject.css">
+        
+        <script>
+            function displayDatePeriod() {
+                const startDate = document.getElementById('start-date').value;
+                const endDate = document.getElementById('end-date').value;
+                const period = document.getElementById('date-period');
+    
+                if (startDate && endDate) {
+                    period.textContent = `Selected Period: ${startDate} - ${endDate}`;
+                } else {
+                    period.textContent = 'Please select both dates.';
+                }
+            }
+        </script>
+
+    </head>
+    <style>
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+        }
+
+      
+        #loader-logo {
+            width: 100px;
+            animation: spin 3s linear infinite;
+        }
+
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+<body>
+        
+    <div id="preloader">
+        <img src="insight-photo/Black Gold Illustrative Vintage Baroque Hotel Restaurant Logo (3).png" 
+        alt="Loading" id="loader-logo" style="width: 50%; height: auto;" >
+    </div>
+    <script>
+
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            preloader.style.display = 'none'; 
+        });
+    </script>
+
+    <div class="insight-logo">
+
+    
+        <div style="margin-top: 10%; margin-left: 10%;">,<h1>Stay A Bit Longer &#8212 Room Only<br></h1>
+
+            <p>A flexible option for those who prefer to plan their own meals or dine out. Enjoy
+                 our luxurious accommodations 
+                at an exclusive rate when you stay for an extended period. Your perfect retreat awaits!</p>
+            <br>
+            <h2>Pricing:<br.
+
+                3 Nights Stay: Starting at LKR 48,000 (Deluxe Room),br></br.>
+                5 Nights Stay: Starting at LKR 80,000 (Deluxe Room)</h2>
+            <br>
+            
+            <br>
+            <form oninput="displayDatePeriod()" class="Form" style="opacity:1 ;">
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start-date">
+                <br>
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" name="end-date">
+                <p id="date-period">Please select both dates.</p>
+            </form>
+            <a href="https://campuslamarina.es/wp-content/uploads/2019/05/img_2630.png">
+            <button class="Form" >Check in</button>
+            </a>
+          
+        </div>
+        <div >
+            <img src="insight-photo/Black Gold Illustrative Vintage Baroque Hotel Restaurant Logo (2).png"  style="max-width: 100%; justify-content: left;" >
+        </div>
+        
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
