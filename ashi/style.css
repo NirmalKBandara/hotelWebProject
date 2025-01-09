@@ -148,6 +148,7 @@ header:hover{
 .contact a{
     text-decoration: none;
     color: goldenrod;
+    font-size: 3vw;
 }
 .inner-contact{
     display:none;
@@ -176,7 +177,7 @@ header:hover{
     color: rgb(202, 153, 29);
     box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.125);
 }
-    .fa-facebook, .fa-facebook-messenger, .fa-whatsapp, .fa-instagram{
+.fa-facebook-messenger{
     font-size: 3vw;
 }
 
