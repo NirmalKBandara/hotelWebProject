@@ -51,7 +51,7 @@ for (let j = 0; j < thumbImageList.length; j++) {
 
 thumbImageList[0].classList.add("active");
 
-const leftslide = setInterval(left,5000);
+const leftslide = setInterval(right,5000);
 
 
 
