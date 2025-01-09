@@ -287,7 +287,7 @@ body {
     color: white;
    
     clear: both;
-    height: 500px;;
+    height: 400px;;
     padding: 40px 120px 50px 120px;
 }
 .about{
@@ -380,4 +380,11 @@ body {
     font-size: 80%;
     clear: both;
     float: left;
+}
+@media (max-width: 1024px){
+    .footer{
+        
+        height: 700px;;
+        
+    }
 }
