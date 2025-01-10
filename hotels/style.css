@@ -285,23 +285,22 @@ body {
 /*footer*/
 .footer{
     background-color: black;
-    top: 2300px;
     color: white;
-    position: absolute;
-    left: 0;
-    width: 88vw;
+    position: relative;
+    left: -0.5vw;
+    width: 100vw;
     clear: both;
     height: 300px;
     padding: 40px 120px 50px 120px;
 }
 @media (max-width:1276px) {
     .footer{
-        top: 3375px;
+        height: 500px;  
     }
 }
 @media (max-width:1183px) {
     .footer{
-    height: 700px;
+        height: 400px;
     }
 }
 .about{

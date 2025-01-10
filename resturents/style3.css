@@ -291,8 +291,18 @@ body {
     left: -0.5vw;
     width: 100vw;
     clear: both;
-    height: 500px;
+    height: 300px;
     padding: 40px 120px 50px 120px;
+}
+@media (max-width:1276px) {
+    .footer{
+        height: 500px;  
+    }
+}
+@media (max-width:1183px) {
+    .footer{
+        height: 400px;
+    }
 }
 .about{
     height: 170px;

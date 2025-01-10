@@ -282,15 +282,30 @@ body{
     box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.15);    transition: 0.3s ease;
 }
 .footer{
-   position: absolute;
     background-color: black;
+    top: 1500px;
     color: white;
+    position: absolute;
     left: 0;
-    top: 240vh;
+    width: 88vw;
+    position: relative;
+    left: -0.5vw;
+    width: 100vw;
     clear: both;
-    width: 80vw;
-    height: 30vh;;
-    padding: 10vmin 10vw;
+    height: 300px;
+    padding: 40px 120px 50px 120px;
+}
+@media (max-width:1276px) {
+    .footer{
+        top: 3375px;
+        height: 500px;  
+    }
+}
+@media (max-width:1183px) {
+    .footer{
+    height: 700px;
+        
+    }
 }
 .about-00{
     height: 170px;
@@ -480,12 +495,4 @@ body{
         width: calc(160vw/6);
         height: calc(90vw/3);
     }
-.footer{
-     height: 50vh;;
-    }
-}
-@media (max-width:650px) {
-    .footer{
-        height: 70vh;;
-       }
 }
